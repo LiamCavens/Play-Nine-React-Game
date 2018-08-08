@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import _ from 'lodash.range';
 
 const Numbers = (props) => {
+    const arrayOfNumbers = _.range(1, 9);
     return (
         <div className="card text-center">
             <div>
-                <span>1</span>
-                <span className='selected'>2</span>
-                <span className='used'>3</span>
+               {arrayOfNumbers.map((number, i) => 
+            <span key={i}>{number}</span>
+                )}
             </div>
         </div>
     );
