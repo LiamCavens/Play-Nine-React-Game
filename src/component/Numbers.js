@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import _ from 'lodash.range';
+import range from 'lodash.range';
 
 const Numbers = (props) => {
-    const arrayOfNumbers = _.range(1, 9);
+    const arrayOfNumbers = range(1, 9);
     return (
         <div className="card text-center">
             <div>
