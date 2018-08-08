@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import range from 'lodash.range';
 
 const Numbers = (props) => {
-    const arrayOfNumbers = range(1, 9);
+    const arrayOfNumbers = range(1, 10);
     return (
         <div className="card text-center">
             <div>
