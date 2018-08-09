@@ -14,6 +14,7 @@ export default class Game extends Component {
     }
 
     selectNumber = (clickedNumber) => {
+        if (this.state.selectedNumbers.indexOf(clickedNumber) >= 0) { return; }
         this.setState(prevState => ({
             selectedNumbers: prevState.selectedNumbers.concat(clickedNumber)
         }));
